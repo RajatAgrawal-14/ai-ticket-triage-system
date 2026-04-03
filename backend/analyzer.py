@@ -21,7 +21,7 @@ def analyze_ticket(message: str):
 
     urgency = any(word in msg for word in URGENCY_WORDS)
 
-    # 🔥 Custom Rule (MANDATORY)
+    #  Custom Rule (MANDATORY)
     if "refund" in msg and "urgent" in msg:
         priority = "P0"
     elif urgency and category == "Technical":
