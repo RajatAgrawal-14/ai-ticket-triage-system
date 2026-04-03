@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Ticket Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Support Ticket Analyzer</h1>
+
+<textarea id="message" placeholder="Enter your issue..."></textarea>
+<br><br>
+
+<button onclick="submitTicket()">Submit</button>
+
+<h2>Result</h2>
+<div id="result"></div>
+
+<h2>Previous Tickets</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Message</th>
+            <th>Category</th>
+            <th>Priority</th>
+            <th>Confidence</th>
+        </tr>
+    </thead>
+    <tbody id="ticketList"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
